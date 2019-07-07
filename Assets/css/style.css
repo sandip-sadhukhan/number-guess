@@ -1,0 +1,62 @@
+/* ------------------------------- FONT ADDED ------------------------------- */
+@font-face{
+    src: url('../font/header.ttf');
+    font-family: 'header';
+}
+@font-face{
+    src: url('../font/player.otf');
+    font-family: 'player';
+}
+body{
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url('../img/bg.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+/* ----------------------------- HEADER SECTION ----------------------------- */
+header h1{
+    font-family: 'player', sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.7rem;
+    word-spacing: 1rem;
+    color: red;
+    text-shadow: 0 0 10px black;   
+}
+#headerpara{
+    font-size:20px;
+    font-family: lucida console,monospace;
+    text-shadow: 2px 3px 8px black;
+    /* text-align: justify; */
+}
+
+/* ------------------------------ CARD SECTION ------------------------------ */
+.card{
+    opacity: 0.8;
+}
+td:hover{
+    cursor: pointer;
+    background-color: rgba(255,255,255,.7);
+    color: black;;
+    border-radius: 60%;
+}
+/* ------------------------------- RESULT DIV ------------------------------- */
+#resultdiv{
+    display: none;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+/* ------------------------------- MEDIA QUARY ------------------------------ */
+@media only screen and (max-width:600px){
+header h1{
+    font-size: 35px;
+    letter-spacing: 0.5rem;
+    word-spacing: 0.8rem;
+}
+#headerpara{
+    font-size:16px;
+    text-align: justify !important; 
+}
+#resultdiv{
+    font-size: 30px;
+}
+}
